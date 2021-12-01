@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter Your Number: <br/> <br/>
+    <input id="no1" type ="number" placeholder="Enter Your Number">  <br/><br/>
+    Enter Your Number <br/> <br/>
+    <input id="no2" type ="number" placeholder="Enter Your Number">  <br/><br/>
+    <button onclick="calculate()">Calculate</button>  <br/><br/>
+    <div id="result">
+
+    </div>
+    <script>
+        function calculate()
+         {
+             var no1 = Number(document.getElementById("no1").value);
+             var no2 = Number(document.getElementById("no2").value);
+            var addition = no1 + no2;  
+            document.getElementById("result").innerHTML="Addition is <ins> "+ addition +"<ins>";
+        }
+    </script>
+</body>
+</html>
