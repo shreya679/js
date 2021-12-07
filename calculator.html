@@ -9,67 +9,86 @@
 <body>
     <tr>
         <td>
-            <input id="no1" type ="number">
+            <input id="result" type ="number">
         </td>
         <td>
-            <button onclick="calculate()">Clear</button>
-        </td>
-    </tr><br/>
-    <tr>
-        <td>
-            <button onclick="calculate()">9</button>
-        </td>
-        <td>
-            <button onclick="calculate()">8</button>
-        </td>
-        <td>
-            <button onclick="calculate()">7</button>
-        </td>
-        <td>
-            <button onclick="calculate()">+</button>
+            <button onclick="displayno(this)">Clear</button>
         </td>
     </tr><br/>
     <tr>
         <td>
-            <button onclick="calculate()">6</button>
+            <button onclick="displayno(this)">9</button>
         </td>
         <td>
-            <button onclick="calculate()">5</button>
+            <button onclick="displayno(this)">8</button>
         </td>
         <td>
-            <button onclick="calculate()">4</button>
+            <button onclick="displayno(this)">7</button>
         </td>
         <td>
-            <button onclick="calculate()">-</button>
+            <button onclick="displayno(this)">+</button>
+        </td>
+    </tr><br/>
+    <tr>
+        <td>
+            <button onclick="displayno(this)">6</button>
+        </td>
+        <td>
+            <button onclick="displayno(this)">5</button>
+        </td>
+        <td>
+            <button onclick="displayno(this)">4</button>
+        </td>
+        <td>
+            <button onclick="displayno(this)">-</button>
         </td>
     </tr><br>
     <tr>
         <td>
-            <button onclick="calculate()">3</button>
+            <button onclick="displayno(this)">3</button>
         </td>
         <td>
-            <button onclick="calculate()">2</button>
+            <button onclick="displayno(this)">2</button>
         </td>
         <td>
-            <button onclick="calculate()">1</button>
+            <button onclick="displayno(this)">1</button>
         </td>
         <td>
-            <button onclick="calculate()">*</button>
+            <button onclick="displayno(this)">*</button>
         </td>
     </tr><br/>
     <tr>
         <td>
-            <button onclick="calculate()">0</button>
+            <button onclick="displayno(this)">0</button>
         </td>
         <td>
-            <button onclick="calculate()">.</button>
+            <button onclick="displayno(this)">.</button>
         </td>
         <td>
-            <button onclick="calculate()">=</button>
+            <button onclick="displayno(this)">=</button>
         </td>
         <td>
-            <button onclick="calculate()">/</button>
+            <button onclick="displayno(this)">/</button>
         </td>
     </tr>
+    <script>
+        function displayno(ctrl)
+        {
+            document.getElementById("result").value += ctrl.innerText;
+        }
+        function clearresult()
+        {
+            document.getElementById("result").value = "";
+        } 
+        function calculate()
+        {
+            try{
+                document.getElementById("result").value = eval(document.getElementById("result").value)
+            }
+            catch(ex){
+               alert("wrong input")
+            }
+        }
+    </script>
 </body>
 </html>
