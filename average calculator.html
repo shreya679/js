@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter Your Number: <br/> <br/>
+    <input id="no1" type ="number" placeholder="Enter Your Number">  <br/><br/>
+    Enter Your Number: <br/> <br/>
+    <input id="no2" type ="number" placeholder="Enter Your Number">  <br/><br/>
+    Enter Your Number: <br/> <br/>
+    <input id="no3" type ="number" placeholder="Enter Your Number">  <br/><br/>
+    Enter Your Number: <br/> <br/>
+    <input id="no4" type ="number" placeholder="Enter Your Number">  <br/><br/>
+    Enter Your Number: <br/> <br/>
+    <input id="no5" type ="number" placeholder="Enter Your Number">  <br/><br/>
+    <button onclick="calculate()">Calculate</button>  <br/><br/>
+    <div id="result">
+
+    </div>
+    <div id="result1">
+
+    </div>
+    <script>
+        function calculate()
+         {
+             var no1 = Number(document.getElementById("no1").value);
+             var no2 = Number(document.getElementById("no2").value);
+             var no3 = Number(document.getElementById("no3").value);
+             var no4 = Number(document.getElementById("no4").value);
+             var no5 = Number(document.getElementById("no5").value);
+             var addition = no1 + no2 +no3 +no4 +no5 ;  
+             var average = addition/5 ;
+             document.getElementById("result").innerHTML="Addition is <ins> "+ addition +"<ins>";
+             document.getElementById("result1").innerHTML="Average is <ins> "+ average +"<ins>";
+        }
+    </script>
+</body>
+</html>

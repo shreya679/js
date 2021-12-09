@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your Number:<br/>
+    <input type="text" id="number1"placeholder="enter your number"><br/>
+     Enter your Number:<br/>
+    <input type="text" id="number2"placeholder="enter your number"><br/>
+    <button onclick="calculate()">Result</button><br>
+    <div id="result"></div>
+    <script>
+        function calculate()
+        {
+            let number1 =document.getElementById("number1").value
+            let number2 =document.getElementById("number2").value
+            // let largest;
+            if(number1>number2)
+            
+            {
+                // largest=1;
+                 document.getElementById("result").innerHTML=number1+"is larger";
+            }
+            else
+            
+            {
+                
+                document.getElementById("result").innerHTML=number2+"is larger" ;
+            }
+           
+        }
+    </script>
+
+</body>
+</html>
