@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a = " welcome to javascript "
+    let b = 'javascript'
+    console.log("string:"+a);
+    console.log("length:"+a.length);
+    console.log("slice:"+a.slice(5,-2));
+    console.log("substring:"+a.slice(5,20));
+    console.log("substr:"+a.substr(6,4));
+    console.log("Uppercase:",a.toUpperCase());
+    console.log("Lowercase:",a.toLowerCase());
+    let c = a.concat(b)
+    console.log("concatination:",c);
+    console.log("trim:",a.trim());
+    let no = "8"
+    no = no.padStart(5,0);
+    console.log(no);
+    let no1 = "9"
+    no1 = no1.padEnd(5,0);
+    console.log(no1);
+    let x = a.charAt(6);
+    console.log(x);
+    x = a.charCodeAt(6);
+    console.log(x);
+    let array = a.split(" ");
+    console.log(array);
+    console.log("index of javascript:",a.indexOf("javascript"));
+    console.log("lastindex of to:",a.lastIndexOf("to"));
+    console.log("search:"+a.search("javascript"));
+
+</script>
+</body>
+</html>
